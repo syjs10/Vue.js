@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p id="test"></p>
+</body>
+	<script src="vue.js"></script>
+	<script>
+		// var data = {a : 1}
+		// var vm = new Vue({
+		// 	data:data
+		// });
+		// var test = document.getElementById('test');
+		// test.innerHTML = vm.a;
+
+
+
+		// var vm = new Vue({
+		// 	el:"#test",
+		// 	data : data
+		// })
+		// document.getElementById('test').innerHTML=vm.a;
+		// console.log(vm.$data === data)
+		// console.log(vm.$el === document.getElementById('test'))
+		// vm.$watch('a', function(newVal, oldVal){
+		// 	document.getElementById('test').innerHTML=vm.a;
+		// })
+
+		var vm = new Vue({
+			data : {
+				a : 1,
+			},
+			created: function() {
+				console.log("a is " + this.a);
+			}
+		})
+
+	</script>
+</html>
